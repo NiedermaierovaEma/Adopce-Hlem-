@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADOPCE HELMÝŽĎŮ</title>
+    <style>
+        /* === ZÁKLADNÍ STYL === */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #0077cc;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* === NAVIGACE === */
+        nav {
+            background-color: #005fa3;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+        }
+
+        nav a:hover, nav a.active {
+            background-color: #004b80;
+        }
+
+        /* === OBSAH === */
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto 80px auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+        }
+
+        section {
+            display: none;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        img.hero {
+            width: 100%;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+
+        /* === FORMULÁŘ === */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        form input, form textarea {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 15px;
+        }
+
+        form button {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #0077cc;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #005fa3;
+        }
+
+        footer {
+            background-color: #0077cc;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ADOPCE HELMÝŽĎŮ</h1>
+    </header>
+
+    <nav>
+        <a href="#" class="active" onclick="showPage('index.html', this)">Domů</a>
+        <a href="#" onclick="showPage('nasisneci.html', this)">Naši šneci</a>
+        <a href="#" onclick="showPage('kontakt.html', this)">Kontakt</a>
+        <a href="#"onclick="showPage('pozadavky.html', this)">Požadavky</a>
+    </nav>
+
+    <main>
+        <!-- 🏠 DOMŮ -->
+        <section id="index.html" class="active">
+            <h2>O naší firmě</h2>
+            <p>Máte pocít že vám život utíká pod nohama? potřebujete se zpomalit? Chcete poznat milujícího parťáka na kousek života? V tom případě je naše adopční centrum přesně pro vás!</p>
+            <img src="https://img3.wallspic.com/previews/6/2/8/9826/9826-los_caracoles_y_babosas-caracol-los_moluscos-x750.jpg" class="hero">
+            <p>Adopce hlemýždě je i přesto velmi seriozní záležitost. Proto apelujeme na pozorné přečtení našich požadavků.</p>
+            <p>Naše stanice byla založena roku 1978 Horácem Ignácem a jeho plžím společníkem Metatronem. Ze začátku působila spíše jako útočiště pro unavené a hladové plže všech druhů. Už v té době bylo ovšem očividné že největší autoritu v této zahradě spásy mají právě hlemýždi. Tato domněnka se stala faktem hned dva roky po založení firmy. Ve dne 4.10 roku 1980 se kolem druhé hodiny odpolední odehrála bitva která nadobro ustanovila hranice říší tehdejších plžích kmenů které jsou platné do dnešního dne. Utkali se hlemýždi se slimáky a po slizovém boji který se táhl až do úsvitu dalšího dne bylo o vítězi rozhodnuto. Na vítězné straně stáli hlemýždi s jejich nejslavnějším velitelem kterým nebyl nikdo jiný než samotný Metatron. Ten se nad poraženými slimáky slitoval a nechal je odejít živé. Nadobro putovat krajinou bez ulity kterou by mohli nazývat domovem.</p>
+        </section>
+
+        <!-- 👤 NASI SNECI -->
+        <section id="nasisneci.html">
+            <h2>Zde najdete kompletní fotogalerii hlemýžďů kteří jsou aktuálně dostupní k adopci.</h2>
+            <img src="https://media.istockphoto.com/id/1323296537/id/foto/siput-atau-escargot-yang-dapat-dimakan-merangkak-di-lumut.jpg?s=170667a&w=0&k=20&c=ksQwhGJiF7VcevUlZuAYnAHrY84MQC_KuMPuGRmc-HM=" class="hero">
+
+            <h3>Frederick Ulita ze Zelí</h3>
+            <ul>
+                <li>mazlivý</li>
+                <li>ve středním věku</li>
+                <li>sportovní</li>
+            </ul>
+
+            <img src="https://ecoportal.info/wp-content/uploads/2020/02/sadovaya-ulitka.jpg" alt="O mně" class="hero">
+            <h4>Matěj</h4>
+            <ul>
+                <li>samostatný</li>
+                <li>mladý</li>
+                <li>zvědavý</li>
+            </ul>
+            <img src="https://shop.popelka.cz/files/static_pages_files/images/1-1(1).jpg" alt="O mně" class="hero">
+            <h5>Milan</h5>
+            <ul>
+                <li>pyšný</li>
+                <li>důchodový věk</li>
+                <li>sklony k extrémistickému levicismu.</li>
+            </ul>
+
+        </section>
+
+        <!-- ✉️ KONTAKT -->
+        <section id="kontakt.html">
+            <h2>Kontakt</h2>
+            <p>Pokud si někoho z našich vzácných hostů oblíbíte, poskytujeme nejen vzájemná setkání, ale i celé zážitkové výlety. Každý náš plž vede plnohodnotný život a má plná tykadla plánů, takže bychom museli najít termín, kdy jsou obě strany volné. Momentálně nabízíme výlety na Karlštejn, prohlídku místního města, nebo procházku krásným lesem s cílovou destinací bufetu v zelné farmě.</p>
+            <p>Každou středu od 17 hodin také vedeme skupinové seznamovací schůze, které jsou ideální pro stydlivé jedince, kteří se stydí seznámit se s hlemýžděm ihned osobně. Schůzka má zpravidla kolem hodiny a půl. Náplní jsou seznamovací hry a společný pokrm.</p>
+            <p>Chcete si někoho adoptovat? Vyplňte formulář níže:</p>
+
+            <form onsubmit="event.preventDefault(); alert('Zpráva byla odeslána!');">
+                <label for="name">Jméno:</label>
+                <input type="text" id="name" name="name" placeholder="Vaše jméno" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Váš e-mail" required>
+
+                <label for="message">Vybraný plž:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Vámi vybraný plž..." required></textarea>
+
+                <button type="submit">Odeslat</button>
+            </form>
+
+            <h3>Další kontakt</h3>
+            <p><strong>Email:</strong> <a href="mailto:jane@example.com">adopcesneku@seznam.cz</a></p>
+            <p><strong>Telefon:</strong> +420 1ž67 90</p>
+        </section>
+
+        <!-- 👤 POZADAVKY -->
+        <section id="pozadavky.html">
+            <h2>Prosím přečtěte si všechny požadavky pečlivě! Pokud máte jakékoliv dotazy, kontaktujte nás.</h2>
+           
+
+            <h3>Naše požadavky:</h3>
+            <ul>
+                <li>tolerance a respekt</li>
+                <li>kladný vztah k zelenině</li>
+                <li>nebýt Francouz</li>
+                <li>předešlé zkušenosti</li>
+            </ul>
+            <p>Pokud nemáte předešlé zkušenostu NEZOUFEJTE! Každý měsíc pořádáme přípravný kurz o chovu plžů. Zde se dozvíte vše důležité a seznámíte se s ostatními členy této úžasné komunity. Na kurz není nutno se připravovat. S sebou si znalte puze poukaz totožnosti a svou neutuchající lásku k plžům.</p>
+            <p>Chcete se na kurz ještě víc připravit? podívejte se na toto naučné video.</p>
+
+            <h2>Video z YouTube</h2>
+            <iframe width="640" height="360" 
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+
+
+            
+        </section>
+    </main>
+
+    <footer>
+        &copy; adopcehlemyzdu.com
+    </footer>
+
+    <script>
+        // === FUNKCE NA PŘEPÍNÁNÍ SEKČÍ ===
+        function showPage(pageId, link) {
+            // Skryje všechny sekce
+            document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+            // Zobrazí požadovanou sekci
+            document.getElementById(pageId).classList.add('active');
+
+            // Aktualizuje aktivní odkaz v navigaci
+            document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+            link.classList.add('active');
+        }
+    </script>
+</body>
+</html>
